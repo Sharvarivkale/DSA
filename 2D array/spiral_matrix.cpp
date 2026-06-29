@@ -41,7 +41,7 @@ public:
         for(int i=endcol;count<total && i>=startcol;i--){
             ans.push_back(matrix[endrow][i]);
             count++;
-        }
+        
         endrow--;//here ending row are become get the constant;
 
         //printing the firstrow
