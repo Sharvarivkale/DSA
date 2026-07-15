@@ -8,27 +8,31 @@ class solution{
       if(arr1[i]<=arr2[j]){
          if(uniarr.size()==0 || uniarr.back()!=arr1[i]){
           uniarr.push_back(arr[i]);
-          i++;
+          
          }
+         i++;
       }
       else{
          if(uniarr.size()==0 || uniarr.back()!=arr1[j]){
           uniarr.push_back(arr[j]);
-          j++;
+          
          }
+         j++;
       }
     }
     while(i<n){
       if(uniarr.size()==0 || uniarr.back()!=arr1[i]){
           uniarr.push_back(arr[i]);
-          i++;
+          
          }
+         i++;
     }
     while(j<m){
                if(uniarr.size()==0 || uniarr.back()!=arr1[j]){
           uniarr.push_back(arr[j]);
-          j++;
+          
          }
+         j++;
     }
   }
 
