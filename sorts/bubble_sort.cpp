@@ -1,14 +1,13 @@
 class Solution {
 public:
     vector<int> sortArray(vector<int>& nums) {
-        for (int i=1;i<nums.size();i++){
-            //for rounds goes from the 1 to n-1
-            for(int j=0;j<nums.size()-1;j++){
-                if(nums[j]>nums[j+1]){
-                    swap(nums[j],nums[j+1]);
-                }
+       for(int i=0;i<nums.size()-1;i++){
+        for(int j=0;j<nums.size()-i-1;j++){
+            if(nums[j+1]>nums[j]){
+                swap(nums[j+1],nums[j]);
             }
         }
-        return nums;
+       }
+       return nums;
       }
     }
