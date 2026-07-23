@@ -6,6 +6,7 @@ public:
         int mid=s+(e-s)/2;
 
         while(s<e){
+          //here we want to show the peak element for that we comapre with the 2 elements near present
             if(arr[mid]<arr[mid+1]){
                 s=mid+1;
             }
