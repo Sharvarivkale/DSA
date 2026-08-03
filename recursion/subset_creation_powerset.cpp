@@ -16,7 +16,7 @@ void solve(vector<int> &nums,vector<vector<int>> &ans,vector<int> &output,int in
   output.push_back(nums[index]);
   solve(nums,ans,output,index+1);
 
-  //pop it out
+  //pop it out or backtracking
   output.pop_back();
 }
 
