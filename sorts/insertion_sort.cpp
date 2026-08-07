@@ -3,14 +3,14 @@ class Solution {
 public:
     vector<int> sortArray(vector<int>& nums) {
       for(int i=0;i<nums.size()-1;i++){
-        int key=arr[i];
+        int key=nums[i];
         int j=i-1;
 
         while(j>=0 && nums[j]>key){
-          arr[j+1]=arr[j];
+          nums[j+1]=nums[j];
           j--;
         }
-        arr[j+1]=key;
+        nums[j+1]=key;
       }
     return nums;
     }
