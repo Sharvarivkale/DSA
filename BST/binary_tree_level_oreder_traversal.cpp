@@ -40,7 +40,8 @@ public:
                 if(temp->right!=NULL){
                     q.push(temp->right);
                 }
-            }
+            
+                
             ans.push_back(level);
         }
         return ans;        
